@@ -1,0 +1,59 @@
+.img-circle {
+	width: 304px;
+	height: 236px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.logo {
+	display: block;
+	/*border: 1px solid rgb(255,232,57);*/
+	margin: 0 auto;
+}
+.img-square{
+	width: 500px;
+	height: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-pills > li{
+	
+	margin-top: 30px;
+	float: none;
+	display: inline-block; /*  dispaly block anzichè block perchè cosi possiamo dargli un'altezza e una larghezza cosa NON possibile con "block"*/	
+}
+
+.nav-pills, .panel{
+    text-align:center;
+}
+
+/* select options */
+.form-group {	
+  	width: 400px;
+  	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.form-control {
+	border: 1px solid rgb(255,232,57);
+}
+
+/* centriamo la scritta Panel */
+#projectLabel {	
+	margin-bottom: 20px;
+	display: block;	
+    text-align: center; /* alinia al centro rispetto al blocco */
+}
+
+/*
+	Differenza tra block - inline block: 
+	inline block = [A][B][C];
+	block 		 = [A]
+				   [B]
+				   [C]
+	*/

@@ -1,0 +1,135 @@
+<!doctype html>
+<html ng-app="personalsite">
+  <head>
+    
+    
+  </head>
+  <body >
+
+ 
+
+   <img src="personal_image.jpg" class="img-circle" alt="Personal image">
+
+   <curriculum-vitae> </curriculum-vitae>
+
+    <section ng-controller="ProjectDescription as project">
+
+      <fieldset class="form-group">
+          <label id="projectLabel" for="project">Progetti </label>
+          <select class="form-control" id="project"  
+            ng-model="modelExam" 
+            ng-options="e.esame for e in examInformation">
+          </select>
+      </fieldset>
+
+      
+      <div class="panel">
+          <img class="logo" src="{{ modelExam.logo}}" alt="logo progetto" >
+      </div>
+
+      
+
+      <ul class="nav nav-pills">
+        <li role="presentation" ng-class="{active: project.isSelected(1)}">
+          <a href ng-click="project.selectTab(1)">Nome</a>
+        </li>
+        <li role="presentation" ng-class="{active: project.isSelected(2)}">
+          <a  href ng-click="project.selectTab(2)">Esame</a>
+        </li>
+        <li role="presentation"  ng-class="{active: project.isSelected(3)}">
+          <a  href ng-click="project.selectTab(3)">Descrizione</a>
+        </li>
+        <li role="presentation"  ng-class="{active: project.isSelected(4)}">
+          <a  href ng-click="project.selectTab(4)">Linguaggio</a>
+        </li>
+        <li role="presentation"  ng-class="{active: project.isSelected(5)}">
+          <a  href ng-click="project.selectTab(5)" >Screen</a>
+        </li>
+      </ul>
+
+      <div class="panel" ng-show="project.isSelected(1)">
+        <h4> Nome </h4>
+        <p>  {{ modelExam.nome }} </p>
+      </div>
+
+      <div class="panel" ng-show="project.isSelected(2)">
+        <h4> Esame </h4>
+        <p> {{ modelExam.esame }} </p>
+      </div>
+
+      <div class="panel" ng-show="project.isSelected(3)">
+        <h4> Descrizione </h4>
+        <p> {{ modelExam.descrizione }} </p>
+      </div>
+
+      <div class="panel" ng-show="project.isSelected(4)">
+        <h4> Linguaaggio </h4>
+        <p ng-repeat="l in modelExam.linguaggio"> {{ l.name }} </p>
+      </div>
+
+      <div  class="panel" ng-show="project.isSelected(5)">
+        <h4> Screen </h4>
+                <!-- visualizzazione degli screen  -->
+                <div  id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <!-- INDICATORI SUL NUMERO DELLE SLIDE -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="{{image.path.index}}" ng-class="{active:!$index}" ng-repeat="image in modelExam.images"></li>                  
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <!-- IMMAGINI DELLE SLIDE -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item" ng-class="{active:!$index}" ng-repeat="image in modelExam.images">
+                    <img src="{{image.path}}" class="img-square" alt="Personal image">
+                    <!--<div class="carousel-caption">
+                      eventuale didascalia 
+                    </div>-->
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <!-- SHIFT DELLE SLIDE -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+      </div>
+
+    </section>
+
+
+   
+    
+   
+
+    <!-- ANGULARJS -->
+    <script type="text/javascript" src="js/angular.min.js"></script>
+
+    <!-- JQUERY -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MODULE -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" type="text/css" href="css/layoutSite.css">
+  </body>
+</html>
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
