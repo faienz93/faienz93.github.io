@@ -1,0 +1,804 @@
+html, body {
+	max-width: 100%;
+margin:0;
+padding:0;
+height: 100%;
+}
+
+/* https://css-tricks.com/perfect-full-page-background-image/ 
+*/
+
+/* -------------------------- BACKGROUND IMAGE ------------------------------ */
+.background {
+
+max-width:100% !important;
+height:auto;
+display:block;
+overflow: hidden;
+background-size: cover;
+background-position: center;
+-webkit-background-size: 100%; 
+-moz-background-size: 100%; 
+-o-background-size: 100%; 
+background-size: 100% auto; 
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+/*width: 100%;
+height: auto;*/
+min-height: 700px;
+-webkit-filter: blur(0.5px);
+-moz-filter: blur(1px);
+-o-filter: blur(0.5px);
+-ms-filter: blur(0.5px);
+filter: blur(0.5px);
+
+}
+
+.heading {
+background-image: url(../image_project/background_site.jpeg);
+/*background-size: 100% 100%;
+min-height:90%;*/
+}
+
+.download {
+background-image: url(../image_project/download_area.jpg);
+}
+
+/* ------------------------ HEADER START  ------------------------ */
+/* center vertically container */
+/*http://phrogz.net/CSS/vertical-align/index.html
+http://stackoverflow.com/questions/10939288/how-can-i-vertically-center-text-in-a-dynamically-height-div
+for centering vertically the item you can use "vertical-align=middle" but this use is possible 
+when the user set the attribute "dispay" as table. In this case the behavior of attribute "vertical align" is the same 
+that the user expects  */
+
+.containertitle {
+position: relative;
+width: 100%;
+height:  100vh; 
+display: table;
+}
+
+.innercontainertitle {	
+max-width: 100%;
+display: table-cell;
+vertical-align: middle;
+}
+
+
+.rounded > .photoheader {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	width: 350px;
+	height: 350px;
+}
+
+/* percosanl image */
+.photoheader {
+margin-left: auto;	
+margin-right: auto;
+
+border-radius:50%;
+z-index: 4;
+border-style:solid;
+border-width:5px;	
+border-color:#fff;
+}
+
+.containerdownload {	
+position: relative;
+height:  100vh; /* get the same height of background image */
+display: table;
+}
+
+.innercontainerdownload {	
+width:  992px;
+display: table-cell;
+vertical-align: middle;
+
+}
+
+.innercontainertitle > h1 {
+display: block;
+margin: 0 auto;
+text-align: center;	
+font-size: 500%;
+font-family: Georgia, serif;
+color: #fff;	
+}
+
+.innercontainertitle > h2 {
+display: block;
+margin: 0 auto;
+text-align: center;	
+margin-top: 20px;
+font-size: 200%;
+font-family: Georgia, serif;
+line-height: 0.1em;
+}
+
+
+h2 {
+width: 80%; 
+text-align: center;    
+border-bottom-style: double ; 
+border-color:#fff;
+line-height: 0.1em;
+margin: 10px 0 20px; 
+} 
+
+h2 span { 
+background:#fff; 
+padding:0 10px; 
+}
+/* ------------------------------ HEADER FINISH -------------------------- */
+.navbar-brand {
+	display: table;
+	overflow: hidden;
+
+}
+.navbar-brand>img {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 100%;
+    /*width: 5vw;
+    height: 9vh; */
+    width: 60px;
+    height: 60px;	
+}
+
+
+
+.logo {
+display: block;
+/*border: 1px solid rgb(255,232,57);*/
+margin: 0 auto;
+}
+
+
+.nav-pills > li{
+
+margin-top: 30px;
+float: none;
+display: inline-block; /*  dispaly block anzichè block perchè cosi possiamo dargli un'altezza e una larghezza cosa NON possibile con "block"*/	
+}
+
+.nav-pills, .panel{
+text-align:center;
+}
+
+/* select options */
+.form-group {	
+width: 400px;
+margin: auto;
+margin-top: 50px;
+margin-bottom: 30px;
+}
+
+.form-control {
+border: 1px solid #5bc0de;	
+}
+
+/* centriamo la scritta Panel */
+#projectLabel {	
+margin-bottom: 20px;
+display: block;	
+text-align: center; /* alinia al centro rispetto al blocco */
+}
+
+
+
+/*
+Differenza tra block - inline block: 
+inline block = [A][B][C];
+block 		 = [A]
+			   [B]
+			   [C]
+		   */
+
+#center {
+	/* disposizione del fieldset */	
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	margin-top: 50px;
+	/* fine disposizione */
+}
+
+fieldset.scheduler-border {
+	border: 1px groove #ddd !important;
+	padding: 0 1.4em 1.4em 1.4em !important;
+	margin: 0 0 1.5em 0 !important;
+	-webkit-box-shadow:  0px 0px 0px 0px #000;
+	box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+	font-size: 1.2em !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	width:auto;
+	padding:0 10px;
+	border-bottom:none;
+}
+
+.bold {
+	font-weight: bold;
+	display: block;
+	text-align: right; 
+}
+
+.italian {
+	font-weight: normal;
+	display: block;
+	text-align: left;
+}
+
+#lastUpdateAnswer {
+	position: relative;
+	top: 5px;
+	font-weight: bold;
+	display: block;
+	text-align: left;
+}
+
+#lastupdate {
+	position: relative;
+	top: 10px;
+	display: block;
+	text-align: right; 
+}
+
+.layoutdescrizione {
+	display: block;
+	text-align: center;
+}
+
+/*.azienda {
+
+font-weight: bold;
+display: block;
+text-align: center;
+
+}*/
+
+#numerore {
+font-weight: bold;
+display: block;
+text-align: center;
+}
+
+.europass {
+display: block;
+margin-left: auto;
+margin-right: auto;	
+}
+
+/* *************** */
+/* layout tabella */ 
+/* *************** */
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-02t6{font-weight:bold;background-color:#00d2cb;color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-d2d8{font-weight:bold;background-color:#00d2cb;color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-5frq{font-style:italic;text-align:center;vertical-align:top}
+
+
+/* *************** */
+/* fine layout tabella */
+/* *************** */
+
+table {
+margin: 0 auto;
+width: 900px;
+}
+
+/* allineamento dei div */ 
+.language div {
+float: left;
+clear: none;
+
+/* margin-right: 10px;*/ 
+margin-left: 20px;		
+}
+
+/* da eliminare  */
+.positionEuropass {	
+
+height: 145px;
+display: block;
+margin: auto;
+vertical-align: middle;	
+
+}
+
+.positionEuropass > img {
+position: relative;
+width: 80px;
+height: 80px;
+top: 30px;
+}
+
+.verticalLine {
+/* border-left: thick solid #ff0000;*/
+border-left-style: dotted;
+}
+
+/*#prova {
+position: relative;
+top: -10px;
+}*/
+
+.desccompetenzeinformatiche {
+font-weight: bold;
+display: block;
+
+}
+
+/* allineamento degli span per la sezione: competenze informatiche */
+.aligndiv span{
+display: inline-block;
+}
+
+.skills {
+margin-top: 10px;
+}
+
+
+.download {	
+text-align: center;		
+display: block;
+}
+
+.download i {
+margin-top: 20px;
+}
+
+.panel {
+width: 600px;
+display: block;
+margin: 0 auto;	
+margin-top: 30px;
+margin-bottom: 50px;	
+}
+
+
+/* ************************************************************** */
+/* *********************** <INTESTAZIONE> *********************** */
+/* ************************************************************** */
+
+/* heading of curriculum. Is the same for the heading of project */ 
+.title {
+display: block;
+margin: 0 auto;
+width: 50%;
+height: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+
+
+/* described the layout of h3 */
+.t {	
+/*background-color: rgb(255,232,57);*/
+display: block;
+margin: 0 auto;
+text-align: center;
+margin-top: 30px;
+
+border-bottom-style: double ; 
+border-color:#000000;
+line-height: 0.1em;
+margin: 30px 0 20px; 
+font-family: Courier, monospace;
+}
+
+.t span { 
+background:#fff; 
+padding:0 10px; 
+}
+
+/* ************************************************************** */
+/* *********************** </INTESTAZIONE> ********************** */
+/* ************************************************************** */
+
+.backgroundproject {
+background-color: rgb(255,232,57);
+}
+
+/*.backgroundproject {
+
+margin-top: 50px;
+overflow: hidden;
+background-size: cover;
+background-position: center;
+background-image: url(../image_project/background_image_project.jpg);
+width: 100%;
+height: 700px;
+
+
+/*-webkit-filter: blur(1px);
+-moz-filter: blur(1px);
+-o-filter: blur(1px);
+-ms-filter: blur(1px);
+filter: blur(1px);
+*/
+/*}*/
+
+footer > .container {
+
+width: 100%;
+height: 100px;
+background-color: #11181f;
+margin-top: 100px;
+
+
+}
+
+.copyright {
+width: 100%;
+height: 25px;
+background-color: #2D3E50;
+}
+
+.container > div {
+text-align: center;
+}
+
+small {	
+margin-left: 50px;
+color: #fff;
+}
+
+.social {
+color: #fff;
+font-family: Charcoal, sans-serif;
+font-size: 30px;
+}
+
+.white {
+color: #fff;
+text-shadow: 1px 1px 1px #ccc;
+font-size: 1.5em;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+
+
+.rate {
+background: #0099FF;
+color: #fff;
+font-size: 40px;
+text-align: center;
+padding: 60px 0;
+border-radius: 100%;
+width: 150px;
+height: 150px;
+position: absolute;
+top: -75px;
+left: 50%;
+margin-left: -75px;
+font-weight: 700;
+}
+
+/* AREA DOWNLOAD  
+http://bootsnipp.com/snippets/featured/bootstrap-30-responsive-pricing-tables
+*/
+.price.panel-blue>.panel-heading {
+color: #fff;
+background-color: #608BB4;
+border-color: #78AEE1;
+border-bottom: 1px solid #78AEE1;
+}
+
+
+.price.panel-blue>.panel-body {
+color: #fff;
+background-color: #73A3D4;
+}
+
+
+.price.panel-blue>.panel-body .lead{
+text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+}
+
+.price.panel-blue .list-group-item {
+color: #333;
+background-color: rgba(50,50,50, .01);
+font-weight:600;
+text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+}
+
+
+.curriculumbackground{
+width: 100%;
+height: 200px;
+background-color: #F2F3FD;
+}
+
+
+
+
+
+/* This layout it used for the position of section*/
+
+/*section {
+position: relative;
+}
+
+.section-padding {
+padding: 100px 0px;
+}*/
+
+.modalfadetitle, .subjectName {
+display: block;
+text-align: center;
+margin: 0 auto;	
+}
+
+.subjectName {
+font-size: 20px;
+font-style: bold;
+font-family: Georgia, serif;
+}
+
+.layoutinformation {
+text-align: left;
+font-style: bold;
+font-size: 17px;
+font-family: Impact, Charcoal, sans-serif;
+}
+
+/* testo della descrizione del progetto giustificato */
+#descrizione {
+text-align: justify;
+
+font-family: "Courier New", Courier, monospace
+}
+
+#lan {
+text-align: left;
+font-size: 17px;
+font-family: "Courier New", Courier, monospace
+}
+
+
+
+/* modified carousel */
+#carousel-example-generic {
+background-color: #eee;
+width: 100%;
+height: 600px;
+position: relative;
+display:inline-block;
+overflow:hidden;
+}
+
+.img-square{
+display: block;
+margin: 0 auto;
+padding: 0;
+height: 600px !important;
+}
+
+
+.scroll-up {
+opacity: 0;
+visibility: hidden;
+position: fixed;
+z-index: 999;
+bottom: 20px;
+right: 20px;
+-webkit-transition: all .3s ease-in-out 0s;
+-moz-transition: all .3s ease-in-out 0s;
+-ms-transition: all .3s ease-in-out 0s;
+-o-transition: all .3s ease-in-out 0s;
+transition: all .3s ease-in-out 0s;
+}
+
+.blue {
+color: #73A3D4;
+}
+
+.jumbotron {
+margin-bottom: 70px;
+}
+/* delete bullet of "ul" */
+ul {
+list-style-type: none;
+}
+.overview > li 
+{
+	margin-top: 30px;
+	/*width: 1px;*/	
+	
+}
+.istruzione div, .generalskills, .experience {
+position: relative;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+line-height: 1.42857143;
+font-size: 17.5px;
+/*padding-left: 5px;
+margin-top: 30px;*/
+}
+
+
+
+li > hr {
+display: block;
+margin-top: 25px;
+height: 2px;
+width: 0px;
+border: 0;
+border-top: 3px double #73A3D4;
+margin: 1em 0;    
+padding: 0;
+}
+
+.imageistruction {
+max-width: 100% !important;
+height: auto !important;
+width: 100px;
+height: 100px;
+display: block;	
+text-align: center;
+margin: 0 auto;
+padding: 5 auto;
+}
+
+div.imageexperience {
+display: table;
+}
+.imageexperience {
+max-width: 100% !important;
+height: auto !important;
+display: block;	
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+margin: 0 auto;
+padding: 5 auto;
+}
+
+/*-----------------------------  tinycirle layout ---------------------------- */
+
+.wrapper {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
+min-width:100px;
+/*overflow: hidden;
+white-space: nowrap;*/
+overflow: hidden;
+white-space: nowrap;    
+}
+
+/* We don't use the margin 0 auto for centering the tinycircle but this */
+.rotatescroll {	
+left: calc( 50% - 150px ); 
+}
+
+
+
+
+
+
+
+
+
+
+.dev {	
+
+position: relative;
+display: block;
+max-width: 100%;
+height: auto;
+width: 50%;
+height: 50%;
+margin: 0 auto;	
+top: 40px;
+
+
+}
+
+
+
+.languagename {
+margin-top: 50px;
+}
+
+.languagename h3 {
+font-family: "Arial Black", Gadget, sans-serif;
+color: #78AEE1;
+}
+
+/*.containerexperience {
+position: relative;
+display: table;
+}
+
+.innercontainerexperience {
+height: 400px;
+display: table-cell;
+vertical-align: middle;
+display: block;
+margin: 0 auto;		
+}*/
+
+.text {
+text-align: left;
+}
+
+#comeback {
+/* position: fixed;*/
+position: fixed;  
+left: 100%;
+top: 65%;
+margin-left: -100px; /*half the width*/
+margin-top: 100px;	
+}
+
+#comeback img {
+color:  #78AEE1;
+width: 50px;
+height: 50px;
+}
+
+.panel-blue {
+width: 80%;
+}
+
+/* vecchia navbar */
+#nav.affix {
+position: fixed;
+top: 0;
+width: 100%;
+z-index:10;
+}
+
+.navbar-form input, .form-inline input {
+width:auto;
+}
+
+
+/* NAV BAR */
+.navbar-inverse {
+background: #252e30;
+border: 0px;
+border-radius: 0px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+text-transform: uppercase;
+font-weight: 700;
+padding: 30px 20px;
+font-size: 16px;
+font-family: 'Roboto', serif;
+color: #FFF !important;
+line-height: 30px;
+}
+
+.navbar-default .navbar-nav > li > a:focus   {
+/*background-color: #FFFF00;*/
+color: #5bc0de !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+background-color: #73A3D4 !important;
+}
+
+/*When scrool the navbar you can see the item of navbar with blue color */
+.navbar-inverse .navbar-nav>.active>a {
+background-color: #73A3D4 !important;
+}

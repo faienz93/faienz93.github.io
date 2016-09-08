@@ -1,0 +1,149 @@
+
+ <?php if (substr_count($_SERVER[‘HTTP_ACCEPT_ENCODING’], ‘gzip’)) ob_start(“ob_gzhandler”); else ob_start(); ?>
+<!doctype html>
+<html ng-app="personalsite">
+<head> <!-- http://stackoverflow.com/questions/21301316/how-to-bootstrap-navbar-static-to-fixed-on-scroll -->
+  <!-- this is the example that I use ->  http://shapebootstrap.net/item/1524985-focal-a-responsive-portfolio-template/live-demo -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- For determinate that the site is adaptive for all dispositive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" name='viewport'>
+  <meta name="description" content="Portfolio di Antonio Faienza">
+  <meta name="author" content="Antonio Faienza">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">  
+  <link href="image_project/antonio_faienza_logo.png" rel="shortcut icon" type="image/vnd.microsoft.icon">  
+  <title>Antonio Faienza - Portfolio </title>
+</head>
+
+<body  data-spy="scroll" data-target=".navbar" data-offset="10">
+<header>
+  <div class="background heading"> 
+      <div class="containertitle">
+            <div class="animated zoomIn innercontainertitle">
+          <!-- I use this div for rounded the image -->
+          <div class="rounded"> 
+              <img src="image_project/image_personal.png" class="photoheader" alt="Personal image">
+          </div>
+            <h1><span id="portfolio"> Developer </span>  </h1>
+            <h2><span> Antonio Faienza </span></h2>
+          </div>
+      </div>  
+          
+    </div>     
+  </div>
+</header>
+  
+ 
+  <nav-bar></nav-bar>
+
+  <!-- this params of body are important for the scroll -->
+   
+
+  <!-- directive for my personal curriculum -->
+  <base-information> </base-information>
+
+  <!-- directive for my istruction -->
+  <istruction-information> </istruction-information>
+
+  <!-- directive for my istruction -->
+   <skill-information></skill-information> 
+  
+
+   <experience-information></experience-information>
+
+
+
+  <!-- description of my project -->   
+  <my-portfolio></my-portfolio>
+  
+  <!-- Download area -->
+  <download-pdf></download-pdf> 
+  
+  <!-- FOOTER AREA -->
+  <footer>
+    <div class="container">
+      <div class="titlefooter">
+        <span class="social"> Social </span>
+      </div>
+      <div class="socialimage">
+        <a target="_blank" href="https://www.facebook.com/antonio.faienza"> 
+          <i class="fa fa-facebook-official fa-3x white" aria-hidden="true"></i>
+        </a>
+        <a target="_blank" href="https://plus.google.com/u/0/113310871987575305746/posts">
+          <i class="fa fa-google-plus-official fa-3x white" aria-hidden="true"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/antonio-faienza-526282b1?trk=nav_responsive_tab_profile_pic">
+         <i class="fa fa-linkedin fa-3x white" aria-hidden="true"></i>
+       </a>
+       <a target="_blank" href="https://www.instagram.com/antoniofa93/"> 
+        <i class="fa fa-instagram fa-3x white" aria-hidden="true"></i>
+      </a>        
+    </div>  
+  </div>
+  <div class="copyright">
+    <small>Copyright © 2016 Span - Designed & Developed by Antonio Faienza </small>
+  </div>
+  
+  <!-- http://shapebootstrap.net/item/1524945-blue-app-free-one-page-responsive-html5-parallax-busine/live-demo -->
+</footer>
+
+  <!-- ANGULARJS -->
+<script type="text/javascript" src="js/angular.min.js"></script>
+
+<!-- JQUERY -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- MODULE -->
+<script type="text/javascript" src="js/app.js"></script>
+
+<!-- CSS FILE -->
+<link rel="stylesheet" type="text/css" href="css/layoutSite.css">
+
+<!-- FONTAWESOME -->    
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- OVERLAY -->
+<link rel="stylesheet" type="text/css" href="css/overlay.css">
+
+<!-- TINYCIRCLE JS-->
+<script type="text/javascript" src="tinycircleslider/jquery.tinycircleslider.min.js"></script>
+
+<!-- TINYCIRCLE CSS -->
+<link rel="stylesheet" type="text/css" href="tinycircleslider/tinycircleslider.css">
+
+<!-- FLATICONS (ICON) -->
+<link rel="stylesheet" type="text/css" href="css/flaticon/flaticon.css"> 
+
+<!-- JQUERY APPEAR - PLUGIN JQUERY -->
+<script type="text/javascript" src="js/jquery.appear/jquery.appear.js"></script>
+
+<!-- ANIMATE.CSS -->
+<link rel="stylesheet" href="css/animate.css">
+
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+<!-- BOOTSTRAP THEME -->
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />-->
+<!-- RESPONSIVE.CSS -->
+<!--<link rel="stylesheet" type="text/css" href="css/responsive.css" />-->
+
+
+<!-- ELASTIC GRID RESPONSIVE -->
+<link rel="stylesheet" type="text/css" href="css/jquery.gallery/elastic_grid.min.css" />
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+ 
+<script src="js/jquery.gallery/modernizr.custom.js"></script>
+ 
+<script src="js/jquery.gallery/classie.js"></script>
+ 
+<script type="text/javascript" src="js/jquery.gallery/elastic_grid.encode.js"></script>
+</body>
+</html>
+

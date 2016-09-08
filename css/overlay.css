@@ -1,0 +1,142 @@
+/*http://miketricking.github.io/dist/#
+http://www.vikaskbh.com/five-css-techniques-make-overlay-div-centered/
+*/
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  /*border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;*/
+  border-bottom: 2px solid #000000;
+  border-top: 2px solid #000000;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+
+
+/*.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}*/
+
+/*.hovereffect .overlay {
+  margin: auto;
+  position: absolute;
+  top: 50px; left: 50px;
+bottom: 50px; right: 50px;
+background-color: #000;
+color: #FFF;
+z-index:5;
+}*/
+
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: absolute;
+  /* Riprende da qui. QUi prima era relative e non absolute. l'ho messo io e capovolgendo l' overlay il quale
+  era absolite mentre adesso relative */  
+  /*left: 10%;
+  top: 10%;*/
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  margin: 0 auto;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter') ;
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  left: 25px;
+  font-size: 20px;
+  background-color: transparent;
+  /*color: #FFF;*/
+  color: #000000;
+
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  /*color: #FFF;*/
+  color: #000000;
+  font-size: 20px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: bold;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.layoutoverlay {
+
+  margin-bottom: 50px;
+
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}

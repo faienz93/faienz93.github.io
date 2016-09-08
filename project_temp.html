@@ -1,0 +1,109 @@
+<section id="section-project" ng-controller="ProjectDescription as project" class="section-padding">
+  <!-- For the presentation of my Project I use, the "overlay". this is the direct link: http://miketricking.github.io/dist/# -->
+  
+
+  <div class="container">
+    <div class="page-header">
+      <h1><i class="fa fa-suitcase" aria-hidden="true"></i> Progetti </h1>      
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-md-3 layoutoverlay" ng-model="modelExam" ng-repeat="e in examInformation">
+        <div class="hovereffect">
+          <!--<img class="img-responsive" src="http://placehold.it/350x250" alt="">-->
+          <img class="img-responsive" class="photo" data-ng-src="{{ e.logo }}" alt="Logo progetto">
+          <div class="overlay">
+            <h2> {{ e.nome }}</h2>
+            <p>
+              <!-- in this part I create a modal dialog -->
+              <a href ng-click="project.selectTab($index)" data-toggle="modal" data-target=".bs-example-modal-lg">VIEW DETAIL</a>
+            </p> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THIS IS THE FUNCTION THAT SHOW ONLY THE APPOSIT PANEL -->
+    <!-- ********************************************************************************************* -->
+    <!-- This is the Div that will contain the description of my project with the class "modal fade" -->      
+    <!-- Modal --> 
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" >
+        <div class="modal-content">
+          <!-- Modal header -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <!--<h4 class="modal-title"> {{ examInformation['$index+1'].nome }} </h4>-->
+            <h1 class="display-4 modalfadetitle">
+              <img class="photo" data-ng-src="{{ modelExam[project.tab].logo }}" alt="Logo progetto" style="display: block; margin: 0 auto; width: 50px; height: 50px; ">
+              {{ modelExam[project.tab].nome }}
+            </h1>
+            
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p class="subjectName"> {{modelExam[project.tab].esame}} </p>
+
+            <!-- Description languages ---->
+            <div class="languageexam">
+              <p class="layoutinformation"> Linguaggi usati </p>
+              <p id="lan" ng-repeat="l in modelExam[project.tab].linguaggio"> {{ l.name }} </p>              
+            </div>
+
+            <!--- Description exam ---->
+            <div class="descriptionexam">
+              <p class="layoutinformation"> Descrizione </p>
+              <p id="descrizione"> {{ modelExam[project.tab].descrizione }}</p>
+            </div>
+
+            <!---- Screen Image ---->
+            <div class="screenexam">
+              
+              <!-- visualizzazione degli screen  -->
+              <div  id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <!-- INDICATORI SUL NUMERO DELLE SLIDE -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="{{image.path.index}}" ng-class="{active:!$index}" ng-repeat="image in modelExam[project.tab].images"></li>                  
+                </ol>
+                <!-- Wrapper for slides -->
+                <!-- IMMAGINI DELLE SLIDE -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item" ng-class="{active:!$index}" ng-repeat="image in modelExam[project.tab].images">
+                    <img src="{{image.path}}" class="img-square" alt="Personal image" ">
+                    <!--<div class="carousel-caption">
+                      eventuale didascalia 
+                    </div>-->
+                  </div>
+                </div>
+                <!-- Controls -->
+                
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
