@@ -164,6 +164,7 @@ app.directive('downloadPdf', function(){
 	}
 });
 
+// : "L' applicativo Gioco Forza 4 simula l'omonimo gioco su una macchina virtuale in modo	interattivo. E' strutturato da un'architettura stand-alone e quindi presuppone la presenza di due giocatori in locale a sfidarsi a colpi di pedine sulla stessa macchina. Scopo del gioco è riuscire a fare una combinazione di quattro pedine in successione (verticale, orizzontale, obliguo). Per rendere il gioco e il suo utilizzo maggiormente appetibile si è pensato ad un sistema che dia la possibilità di selezionare un livello di difficoltà. Linguaggi usati: Java, MySql",
 /* Direttiva per il portfolio */
 app.directive('myPortfolio', function(){
 	return {
@@ -176,7 +177,7 @@ app.directive('myPortfolio', function(){
             [
                 {
                     'title'         : 'Forza 4',
-                    'description'   : "L' applicativo Gioco Forza 4 simula l'omonimo gioco su una macchina virtuale in modo	interattivo. E' strutturato da un'architettura stand-alone e quindi presuppone la presenza di due giocatori in locale a sfidarsi a colpi di pedine sulla stessa macchina. Scopo del gioco è riuscire a fare una combinazione di quattro pedine in successione (verticale, orizzontale, obliguo). Per rendere il gioco e il suo utilizzo maggiormente appetibile si è pensato ad un sistema che dia la possibilità di selezionare un livello di difficoltà. Linguaggi usati: Java, MySql",
+                    'description'   : "L'Applicazione Forza 4 simula l'omonimo gioco su una macchina virtuale in modo interattivo. Scopo del gioco è riuscire a fare una combinazione di quattro pedine in successione. Linguaggi usati: Java, MySql",
                     'thumbnail'     : [ 'image_project/programmazione_internet/small/logo.png', 'image_project/programmazione_internet/small/classifica.png', 'image_project/programmazione_internet/small/difficolta.png', 'image_project/programmazione_internet/small/gioco.png', 'image_project/programmazione_internet/small/home_page.png'],
                     'large'         : [ 'image_project/programmazione_internet/large/logo.png', 'image_project/programmazione_internet/large/classifica.png', 'image_project/programmazione_internet/large/difficolta.png', 'image_project/programmazione_internet/large/gioco.png', 'image_project/programmazione_internet/large/home_page.png'],
                     'button_list'   :
@@ -184,11 +185,11 @@ app.directive('myPortfolio', function(){
                        /* { 'title':'Demo', 'url' : 'http://bonchen.net/' },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}*/
                     ],
-                    'tags'          : ['Programmazione_internet']
+                    'tags'          : ['Programming']
                 },
                 {
                     'title'         : 'Faraza',
-                    'description'   : "Realizzazione di un gestionale per la prenotazione di partite di calcetto. Si può accedere al sistema o come utente o come centro sportivo. Nel primo caso l'utente può prenotare un campo 'pubblicamente' mettendo un avviso tramite il quale altri utenti interessati a tale evento potranno parteciparvi o in alternativa prenotando il campo 'privatamente' ossia un utente decide lui chi invitare alla partire senza sfruttare il sistema di inviti messo a disposizione dal sistema. Nel secondo caso invece, qualora ci si registri come centro oltre che dare la possibilità  agli utenti di poter usufruire dei propri campi, come visto nel primo punto, un centro può organizzare tornei a cui gli utenti potranno iscriversi. Il sistema inoltre da la possibilità  di definire un voto e un commento dopo ogni match. Linguaggi usati: PHP, MySql, Bootstrap, CSS",
+                    'description'   : "Realizzazione di un gestionale per la prenotazione di partite di calcetto. Due modalità di accesso: utente (prenota partite sia pubbliche che private e si può iscrivere a tornei vari); centro sportivo (organizza tornei). Linguaggi usati: PHP, MySql, Bootstrap, CSS",
                     'thumbnail'     : ['image_project/basi_di_dati/small/logo.png', 'image_project/basi_di_dati/small/home.png', 'image_project/basi_di_dati/small/home_centro.png', 'image_project/basi_di_dati/small/profilo_utente.png', 'image_project/basi_di_dati/small/valutazione_prestazione.png'],
                     'large'         : ['image_project/basi_di_dati/large/logo.png', 'image_project/basi_di_dati/large/home.png', 'image_project/basi_di_dati/large/home_centro.png', 'image_project/basi_di_dati/large/profilo_utente.png', 'image_project/basi_di_dati/large/valutazione_prestazione.png'],
                     'button_list'   :
@@ -196,11 +197,11 @@ app.directive('myPortfolio', function(){
                         /*{ 'title':'Demo', 'url' : 'http://bonchen.net/' },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}*/
                     ],
-                    'tags'          : ['Basi_di_dati']
+                    'tags'          : ['DB']
                 },
                 {
                     'title'         : 'FoundOut Beacon',
-                    'description'   : "L'intento dell'applicazione è quello di fornire una serie di funzioni all'utente che consentano di tracciare la posizione di oggetti (chiavi, portafogli), il tutto sfruttando un'architettura client server, utilizzando un database relazionale e linguaggio SQL. Principalmente l'applicazione permette: la visualizzazione dei Beacon disponibili e possibile modifica delle sue opzioni; Possibilità  di cercare il proprio dispositivo attraverso la ricezione del segnale Bluetooth; Visualizzazione dell'ultimo avvistamento effettuato; Visualizzazione di possibili ritrovamenti. Linguaggi utilizzati: Android, MySql",
+                    'description'   : "L'intento dell'applicazione è quello di fornire una serie di funzioni all'utente che consentano di tracciare la posizione di oggetti (chiavi, portafogli), il tutto sfruttando un'architettura client server, utilizzando un database relazionale e linguaggio SQL. Linguaggi utilizzati: Android, MySql",
                     'thumbnail'     : ['image_project/lam/small/logo.png', 'image_project/lam/small/home.png', 'image_project/lam/small/google_maps.png', 'image_project/lam/small/altbeacon_map.png', 'image_project/lam/small/google_maps_2.png', 'image_project/lam/small/inserisci_password.png' ],
                     'large'         : ['image_project/lam/large/logo.png' , 'image_project/lam/large/home.png', 'image_project/lam/large/google_maps.png', 'image_project/lam/large/altbeacon_map.png', 'image_project/lam/large/google_maps_2.png', 'image_project/lam/large/inserisci_password.png' ],
                     'button_list'   :
@@ -208,11 +209,11 @@ app.directive('myPortfolio', function(){
                         /*{ 'title':'Demo', 'url' : 'http://bonchen.net/' },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}*/
                     ],
-                    'tags'          : ['Laboratorio_applicazioni_mobili']
+                    'tags'          : ['App mobili']
                 },
                 {
                     'title'         : 'Very Simple',
-                    'description'   : "Realizzazione di un social-network in GWT che da la possibilità  agli utenti di postare messaggi in stile twitter selezionando una categoria. Tale categoria viene definita da un admin, il quale oltre ad avere questa mansione può eliminare i messaggi ritenuti inopportuni. Ogni utente iscritto alla piattaforma può avere una lista di seguaci e in ogni momento eliminarli. L'obiettivo dell'applicazione è stato principalmente acquisire competenze con il linguaggio UML. Linguaggi usati: UML, GWT",
+                    'description'   : "Realizzazione di un social-network in GWT che da la possibilità  agli utenti di postare messaggi in stile twitter selezionando una categoria. Due modalità di accesso: utente (può aggiungere e cancellare amici); admin (gestisce messaggie categorie).  Linguaggi usati: UML, GWT",
                     'thumbnail'     : ['image_project/ingegneria_del_software/small/logo.png', 'image_project/ingegneria_del_software/small/crea_categoria.png', 'image_project/ingegneria_del_software/small/creazione_messaggio.png', 'image_project/ingegneria_del_software/small/profilo_utente.png', 'image_project/ingegneria_del_software/small/segui_utenti.png'],
                     'large'         : ['image_project/ingegneria_del_software/large/logo.png', 'image_project/ingegneria_del_software/large/crea_categoria.png', 'image_project/ingegneria_del_software/large/creazione_messaggio.png', 'image_project/ingegneria_del_software/large/profilo_utente.png', 'image_project/ingegneria_del_software/large/segui_utenti.png'],
                     'button_list'   :
@@ -220,11 +221,11 @@ app.directive('myPortfolio', function(){
                         /*{ 'title':'Demo', 'url' : 'http://bonchen.net/' },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}*/
                     ],
-                    'tags'          : ['Ingegneria_del_software']
+                    'tags'          : ['Software Engineering ']
                 },
                 {
                     'title'         : 'Raschietto',
-                    'description'   : "Ideazione di un sito che mira a estrapolare informazioni attraverso la tecnica del Web Scraping ossia estraendo dati per mezzo di una sintassi XPATH la quale agisce sulla struttura logica di un documento HTML. Con le informazioni estrapolate sia automaticamente o in alternativa manualmente è possibile eseguire delle annotazioni. Con quest'ultimo termine si intende la creazione di query SPARL da mandare ad un server. L'intento di quest'ultima operazione è volto a favorire l'interazione tra i vari utenti (in questo caso i vari gruppi del corso) in modo che ognuno possa leggere le annotazioni degli altri e visualizzarle sul documento originale. Linguaggi usati: HTML, JQuery, PHP, SPARL, CSS, Bootstrap, XPath" ,
+                    'description'   : "Ideazione di un sito che mira a estrapolare informazioni sia automaticamente che manualmente per mezzo del Web Scraping: estrazione dati usando la tecnologia XPath. Tali informazioni una volta mandate al server (Sparql), possono essere lette.Linguaggi usati: HTML, JQuery, PHP, SPARL, CSS, Bootstrap, XPath" ,
                     'thumbnail'     : ['image_project/tecnologie_web/small/logo.png', 'image_project/tecnologie_web/small/home.png', 'image_project/tecnologie_web/small/crea_annotazioni.png', 'image_project/tecnologie_web/small/salva_annotazioni.png', 'image_project/tecnologie_web/small/scraping.png','image_project/tecnologie_web/small/visualizza_annotazioni_2.png'],
                     'large'         : ['image_project/tecnologie_web/large/logo.png', 'image_project/tecnologie_web/large/home.png', 'image_project/tecnologie_web/large/crea_annotazioni.png', 'image_project/tecnologie_web/large/salva_annotazioni.png', 'image_project/tecnologie_web/large/scraping.png','image_project/tecnologie_web/large/visualizza_annotazioni_2.png'],
                     'button_list'   :
@@ -232,7 +233,7 @@ app.directive('myPortfolio', function(){
                         /*{ 'title':'Demo', 'url' : 'http://bonchen.net/' },
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}*/
                     ],
-                    'tags'          : ['Tecnologie_web']
+                    'tags'          : ['Web']
                 }
 
             ]
