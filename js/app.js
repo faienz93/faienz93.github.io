@@ -178,8 +178,8 @@ app.directive('myPortfolio', function(){
                 {
                     'title'         : 'Forza 4',
                     'description'   : "L'Applicazione Forza 4 simula l'omonimo gioco su una macchina virtuale in modo interattivo. Scopo del gioco è riuscire a fare una combinazione di quattro pedine in successione. Linguaggi usati: Java, MySql",
-                    'thumbnail'     : [ 'image_project/programmazione_internet/small/logo.png', 'image_project/programmazione_internet/small/classifica.png', 'image_project/programmazione_internet/small/difficolta.png', 'image_project/programmazione_internet/small/gioco.png', 'image_project/programmazione_internet/small/home_page.png'],
-                    'large'         : [ 'image_project/programmazione_internet/large/logo.png', 'image_project/programmazione_internet/large/classifica.png', 'image_project/programmazione_internet/large/difficolta.png', 'image_project/programmazione_internet/large/gioco.png', 'image_project/programmazione_internet/large/home_page.png'],
+                    'thumbnail'     : [ 'assets/programmazione_internet/small/logo.png', 'assets/programmazione_internet/small/classifica.png', 'assets/programmazione_internet/small/difficolta.png', 'assets/programmazione_internet/small/gioco.png', 'assets/programmazione_internet/small/home_page.png'],
+                    'large'         : [ 'assets/programmazione_internet/large/logo.png', 'assets/programmazione_internet/large/classifica.png', 'assets/programmazione_internet/large/difficolta.png', 'assets/programmazione_internet/large/gioco.png', 'assets/programmazione_internet/large/home_page.png'],
                     'button_list'   :
                     [
                        /* { 'title':'Demo', 'url' : 'http://bonchen.net/' },
@@ -190,8 +190,8 @@ app.directive('myPortfolio', function(){
                 {
                     'title'         : 'Faraza',
                     'description'   : "Realizzazione di un gestionale per la prenotazione di partite di calcetto. Due modalità di accesso: utente (prenota partite sia pubbliche che private e si può iscrivere a tornei vari); centro sportivo (organizza tornei). Linguaggi usati: PHP, MySql, Bootstrap, CSS",
-                    'thumbnail'     : ['image_project/basi_di_dati/small/logo.png', 'image_project/basi_di_dati/small/home.png', 'image_project/basi_di_dati/small/home_centro.png', 'image_project/basi_di_dati/small/profilo_utente.png', 'image_project/basi_di_dati/small/valutazione_prestazione.png'],
-                    'large'         : ['image_project/basi_di_dati/large/logo.png', 'image_project/basi_di_dati/large/home.png', 'image_project/basi_di_dati/large/home_centro.png', 'image_project/basi_di_dati/large/profilo_utente.png', 'image_project/basi_di_dati/large/valutazione_prestazione.png'],
+                    'thumbnail'     : ['assets/basi_di_dati/small/logo.png', 'assets/basi_di_dati/small/home.png', 'assets/basi_di_dati/small/home_centro.png', 'assets/basi_di_dati/small/profilo_utente.png', 'assets/basi_di_dati/small/valutazione_prestazione.png'],
+                    'large'         : ['assets/basi_di_dati/large/logo.png', 'assets/basi_di_dati/large/home.png', 'assets/basi_di_dati/large/home_centro.png', 'assets/basi_di_dati/large/profilo_utente.png', 'assets/basi_di_dati/large/valutazione_prestazione.png'],
                     'button_list'   :
                     [
                         /*{ 'title':'Demo', 'url' : 'http://bonchen.net/' },
@@ -202,8 +202,8 @@ app.directive('myPortfolio', function(){
                 {
                     'title'         : 'FoundOut Beacon',
                     'description'   : "L'intento dell'applicazione è quello di fornire una serie di funzioni all'utente che consentano di tracciare la posizione di oggetti (chiavi, portafogli), il tutto sfruttando un'architettura client server, utilizzando un database relazionale e linguaggio SQL. Linguaggi utilizzati: Android, MySql",
-                    'thumbnail'     : ['image_project/lam/small/logo.png', 'image_project/lam/small/home.png', 'image_project/lam/small/google_maps.png', 'image_project/lam/small/altbeacon_map.png', 'image_project/lam/small/google_maps_2.png', 'image_project/lam/small/inserisci_password.png' ],
-                    'large'         : ['image_project/lam/large/logo.png' , 'image_project/lam/large/home.png', 'image_project/lam/large/google_maps.png', 'image_project/lam/large/altbeacon_map.png', 'image_project/lam/large/google_maps_2.png', 'image_project/lam/large/inserisci_password.png' ],
+                    'thumbnail'     : ['assets/lam/small/logo.png', 'assets/lam/small/home.png', 'assets/lam/small/google_maps.png', 'assets/lam/small/altbeacon_map.png', 'assets/lam/small/google_maps_2.png', 'assets/lam/small/inserisci_password.png' ],
+                    'large'         : ['assets/lam/large/logo.png' , 'assets/lam/large/home.png', 'assets/lam/large/google_maps.png', 'assets/lam/large/altbeacon_map.png', 'assets/lam/large/google_maps_2.png', 'assets/lam/large/inserisci_password.png' ],
                     'button_list'   :
                     [
                         /*{ 'title':'Demo', 'url' : 'http://bonchen.net/' },
@@ -214,8 +214,8 @@ app.directive('myPortfolio', function(){
                 {
                     'title'         : 'Very Simple',
                     'description'   : "Realizzazione di un social-network in GWT che da la possibilità  agli utenti di postare messaggi in stile twitter selezionando una categoria. Due modalità di accesso: utente (può aggiungere e cancellare amici); admin (gestisce messaggie categorie).  Linguaggi usati: UML, GWT",
-                    'thumbnail'     : ['image_project/ingegneria_del_software/small/logo.png', 'image_project/ingegneria_del_software/small/crea_categoria.png', 'image_project/ingegneria_del_software/small/creazione_messaggio.png', 'image_project/ingegneria_del_software/small/profilo_utente.png', 'image_project/ingegneria_del_software/small/segui_utenti.png'],
-                    'large'         : ['image_project/ingegneria_del_software/large/logo.png', 'image_project/ingegneria_del_software/large/crea_categoria.png', 'image_project/ingegneria_del_software/large/creazione_messaggio.png', 'image_project/ingegneria_del_software/large/profilo_utente.png', 'image_project/ingegneria_del_software/large/segui_utenti.png'],
+                    'thumbnail'     : ['assets/ingegneria_del_software/small/logo.png', 'assets/ingegneria_del_software/small/crea_categoria.png', 'assets/ingegneria_del_software/small/creazione_messaggio.png', 'assets/ingegneria_del_software/small/profilo_utente.png', 'assets/ingegneria_del_software/small/segui_utenti.png'],
+                    'large'         : ['assets/ingegneria_del_software/large/logo.png', 'assets/ingegneria_del_software/large/crea_categoria.png', 'assets/ingegneria_del_software/large/creazione_messaggio.png', 'assets/ingegneria_del_software/large/profilo_utente.png', 'assets/ingegneria_del_software/large/segui_utenti.png'],
                     'button_list'   :
                     [
                         /*{ 'title':'Demo', 'url' : 'http://bonchen.net/' },
@@ -226,8 +226,8 @@ app.directive('myPortfolio', function(){
                 {
                     'title'         : 'Raschietto',
                     'description'   : "Ideazione di un sito che mira a estrapolare informazioni sia automaticamente che manualmente per mezzo del Web Scraping: estrazione dati usando la tecnologia XPath. Tali informazioni una volta mandate al server (Sparql), possono essere lette.Linguaggi usati: HTML, JQuery, PHP, SPARL, CSS, Bootstrap, XPath" ,
-                    'thumbnail'     : ['image_project/tecnologie_web/small/logo.png', 'image_project/tecnologie_web/small/home.png', 'image_project/tecnologie_web/small/crea_annotazioni.png', 'image_project/tecnologie_web/small/salva_annotazioni.png', 'image_project/tecnologie_web/small/scraping.png','image_project/tecnologie_web/small/visualizza_annotazioni_2.png'],
-                    'large'         : ['image_project/tecnologie_web/large/logo.png', 'image_project/tecnologie_web/large/home.png', 'image_project/tecnologie_web/large/crea_annotazioni.png', 'image_project/tecnologie_web/large/salva_annotazioni.png', 'image_project/tecnologie_web/large/scraping.png','image_project/tecnologie_web/large/visualizza_annotazioni_2.png'],
+                    'thumbnail'     : ['assets/tecnologie_web/small/logo.png', 'assets/tecnologie_web/small/home.png', 'assets/tecnologie_web/small/crea_annotazioni.png', 'assets/tecnologie_web/small/salva_annotazioni.png', 'assets/tecnologie_web/small/scraping.png','assets/tecnologie_web/small/visualizza_annotazioni_2.png'],
+                    'large'         : ['assets/tecnologie_web/large/logo.png', 'assets/tecnologie_web/large/home.png', 'assets/tecnologie_web/large/crea_annotazioni.png', 'assets/tecnologie_web/large/salva_annotazioni.png', 'assets/tecnologie_web/large/scraping.png','assets/tecnologie_web/large/visualizza_annotazioni_2.png'],
                     'button_list'   :
                     [
                         /*{ 'title':'Demo', 'url' : 'http://bonchen.net/' },
