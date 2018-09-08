@@ -234,6 +234,18 @@ app.directive('myPortfolio', function(){
                         { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}*/
                     ],
                     'tags'          : ['Web']
+				},
+				{
+                    'title'         : 'P2PMaze',
+                    'description'   : "L'obiettivo del gioco è riuscire a risolvere il labirinto usando la logica. Il giocataore, che può muoversi con le frecce della tastiera, dovrà superare i vari ostacoli per riuscire ad arrivare al tesoro. Ha a disposizione tre vite per raggiungere il suo obiettivo finale.  Si può giocare in Singleplayer o Multiplayer. In quest'ultimo caso ci si dovrà registrare e selezionare uno dei peer disponibili, se ne esistono.",
+                    'thumbnail'     : ['assets/P2P/small/logo.png', 'assets/P2P/small/connect.png', 'assets/P2P/small/input.png', 'assets/P2P/small/multiplayer.png'],
+                    'large'         : ['assets/P2P/large/logo.png', 'assets/P2P/large/connect.png', 'assets/P2P/large/input.png', 'assets/P2P/large/multiplayer.png'],
+                    'button_list'   :
+                    [
+                        /*{ 'title':'Demo', 'url' : 'http://bonchen.net/' },
+                        { 'title':'Download', 'url':'http://porfolio.bonchen.net/'}*/
+                    ],
+                    'tags'          : ['Web']
                 }
 
             ]
