@@ -13,9 +13,37 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">  
   <link href="assets/antonio_faienza_logo.png" rel="shortcut icon" type="image/vnd.microsoft.icon">  
   <title>Antonio Faienza - Portfolio </title>
+  <!-- CSS FILE -->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<!-- FONTAWESOME -->    
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- OVERLAY -->
+<link rel="stylesheet" type="text/css" href="css/overlay.css">
+
+<!-- TINYCIRCLE CSS -->
+<link rel="stylesheet" type="text/css" href="tinycircleslider/tinycircleslider.css">
+
+<!-- FLATICONS (ICON) -->
+<link rel="stylesheet" type="text/css" href="css/flaticon/flaticon.css"> 
+
+<!-- ANIMATE.CSS -->
+<link rel="stylesheet" href="css/animate.css">
+
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+<!-- ELASTIC GRID RESPONSIVE -->
+<link rel="stylesheet" type="text/css" href="css/jquery.gallery/elastic_grid.min.css" />
 </head>
 
 <body  data-spy="scroll" data-target=".navbar" data-offset="10">
+    <div style="display: none" id="hideAll">
+      &nbsp;
+        <div id="loader"></div>
+    </div>
+    
 <header>
   <div class="background heading"> 
       <div class="containertitle">
@@ -84,8 +112,15 @@
     <small>Copyright © 2016 Span - Designed & Developed by Antonio Faienza </small>
   </div>
   
+
+
   <!-- http://shapebootstrap.net/item/1524945-blue-app-free-one-page-responsive-html5-parallax-busine/live-demo -->
 </footer>
+
+<script type="text/javascript">
+  document.getElementById("hideAll").style.display = "block";
+  window.onload = function () { document.getElementById("hideAll").style.display = "none"};
+</script> 
 
   <!-- ANGULARJS -->
 <script type="text/javascript" src="js/angular.min.js"></script>
@@ -101,35 +136,17 @@
 <!-- MODULE -->
 <script type="text/javascript" src="js/app.js"></script>
 
-<!-- CSS FILE -->
-<link rel="stylesheet" type="text/css" href="css/layoutSite.css">
 
-<!-- FONTAWESOME -->    
-<link rel="stylesheet" href="css/font-awesome.min.css">
-
-<!-- OVERLAY -->
-<link rel="stylesheet" type="text/css" href="css/overlay.css">
 
 <!-- TINYCIRCLE JS-->
 <script type="text/javascript" src="tinycircleslider/jquery.tinycircleslider.min.js"></script>
 
-<!-- TINYCIRCLE CSS -->
-<link rel="stylesheet" type="text/css" href="tinycircleslider/tinycircleslider.css">
 
-<!-- FLATICONS (ICON) -->
-<link rel="stylesheet" type="text/css" href="css/flaticon/flaticon.css"> 
 
 <!-- JQUERY APPEAR - PLUGIN JQUERY -->
 <script type="text/javascript" src="js/jquery.appear/jquery.appear.js"></script>
 
-<!-- ANIMATE.CSS -->
-<link rel="stylesheet" href="css/animate.css">
 
-<!-- BOOTSTRAP -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-
-<!-- ELASTIC GRID RESPONSIVE -->
-<link rel="stylesheet" type="text/css" href="css/jquery.gallery/elastic_grid.min.css" />
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
  
