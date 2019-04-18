@@ -1,8 +1,8 @@
 html, body {
 	max-width: 100%;
-margin:0;
-padding:0;
-height: 100%;
+	margin:0;
+	padding:0;
+	height: 100%;
 }
 
 /* https://css-tricks.com/perfect-full-page-background-image/ 
@@ -820,11 +820,12 @@ background-color: #73A3D4 !important;
 /* Center the loader */
 #loader {
 	position: absolute;
+	max-width:100%;
 	left: 50%;
 	top: 50%;
 	z-index: 1;
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	margin: -75px 0 0 -75px;
 	border: 16px solid #f3f3f3;
 	border-radius: 50%;
