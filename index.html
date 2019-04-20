@@ -3,7 +3,7 @@
 <!doctype html>
 <html ng-app="personalsite">
 <head> <!-- http://stackoverflow.com/questions/21301316/how-to-bootstrap-navbar-static-to-fixed-on-scroll -->
-  <!-- this is the example that I use ->  http://shapebootstrap.net/item/1524985-focal-a-responsive-portfolio-template/live-demo -->
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <!-- For determinate that the site is adaptive for all dispositive -->
@@ -32,7 +32,7 @@
 <link rel="stylesheet" href="css/animate.css">
 
 <!-- BOOTSTRAP -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css" />
 
 <!-- ELASTIC GRID RESPONSIVE -->
 <link rel="stylesheet" type="text/css" href="css/jquery.gallery/elastic_grid.min.css" />
@@ -41,7 +41,9 @@
 <body  data-spy="scroll" data-target=".navbar" data-offset="10">
     <div style="display: none" id="hideAll">
       &nbsp;
-        <div id="loader"></div>
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
     </div>
     
 <header>
@@ -114,7 +116,7 @@
   
 
 
-  <!-- http://shapebootstrap.net/item/1524945-blue-app-free-one-page-responsive-html5-parallax-busine/live-demo -->
+
 </footer>
 
 <script type="text/javascript">
@@ -126,12 +128,14 @@
 <script type="text/javascript" src="js/angular.min.js"></script>
 
 <!-- JQUERY -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/jquery/jquery-3.3.1.slim.min.js"></script>
+<!-- POPPER -->
+<script type="text/javascript" src="lib/popper/popper.min.js"></script>
 
 
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/bootstrap.min.js"></script>
 
 <!-- MODULE -->
 <script type="text/javascript" src="js/app.js"></script>
