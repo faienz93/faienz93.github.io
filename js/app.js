@@ -143,16 +143,8 @@ app.directive('experienceInformation', function(){
 app.directive('navBar', function(){
 	return {
 		restrict: 'E',
-		templateUrl: 'navbar.html',
-		controller: function($scope){
-			$(window).scroll(function() {
-				$('#nav').affix({
-					offset: {
-						top: $('header').height()
-					}
-				});	
-			});
-		}
+		templateUrl: 'navbar.html'
+		
 	}
 });
 
