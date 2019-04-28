@@ -1,1 +1,0 @@
-Questa cartella contiene sia i font relativi bootstrap che sia i font relativi a fontawesome 
