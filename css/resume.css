@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Resume v5.0.5 (https://startbootstrap.com/template-overviews/resume)
+ * Start Bootstrap - Antonio Faienza - Portfolio v5.0.5 (https://startbootstrap.com/template-overviews/resume)
  * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/BlackrockDigital/antoniofaienza-portfolio/blob/master/LICENSE)
  */
 
 body {
@@ -52,6 +52,13 @@ p.lead {
   font-weight: 500;
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 2.5rem;
 }
 
 .social-icons a {
