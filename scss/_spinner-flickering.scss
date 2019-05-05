@@ -1,0 +1,25 @@
+// Load spinner 
+// https://stackoverflow.com/questions/3629762/display-html-page-after-loading-complete/3629799#3629799
+#hideAll
+ {
+   position: fixed;
+   max-width: 100%;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: $primary;
+   z-index: 2000; /* Higher than anything else in the document */
+   
+
+ }
+
+ // shared spinner
+.spinner {
+    color: $white; 
+}
+//  Size of Grow
+ #grow {
+    width: 3rem;
+    height: 3rem;    
+ }

@@ -598,3 +598,24 @@ section#contact :-ms-input-placeholder {
   color: #ced4da;
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+#hideAll {
+  position: fixed;
+  max-width: 100%;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: #5e85b9;
+  z-index: 2000;
+  /* Higher than anything else in the document */
+}
+
+.spinner {
+  color: #fff;
+}
+
+#grow {
+  width: 3rem;
+  height: 3rem;
+}
