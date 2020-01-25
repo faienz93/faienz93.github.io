@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Antonio Faienza - Portfolio v5.0.5 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/antoniofaienza-portfolio/blob/master/LICENSE)
  */
 
