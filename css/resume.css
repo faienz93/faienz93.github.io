@@ -90,6 +90,14 @@ p.lead {
   color: #5e85b9;
 }
 
+.bold-detail {
+  font-weight: bold;
+}
+
+.italic-detail {
+  font-style: italic;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
