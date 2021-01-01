@@ -1,0 +1,10 @@
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
+
+body.en :lang(it) {
+    display: none;
+}
+
+body.it :lang(en){
+    display: none;
+}
