@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
@@ -21,12 +21,14 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
+  <link href="node_modules/bootstrap-toggle/css/bootstrap-toggle.min.css" rel="stylesheet">
+
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
 
 </head>
 
-<body id="page-top">
+<body id="page-top" class="it">
 
   <!-- TODO https://getbootstrap.com/docs/4.3/components/spinners/
   https://stackoverflow.com/questions/3629762/display-html-page-after-loading-complete/3629799#3629799 -->
@@ -84,7 +86,21 @@
         </li>
         <li class="nav-item">
           <a target="_self" class="nav-link" href="download/AntonioFaienzaCV.pdf"
-            download="AntonioFaienzaCV.pdf">Download</a>
+            download="AntonioFaienzaCV.pdf">
+            <p class="prova" lang="en">
+              Download
+            </p> 
+              <p class="prova" lang="it">
+                Scarica
+              </p>
+                         
+          </a>            
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <input id="toggle-event" type="checkbox" checked data-toggle="toggle" data-style="ios" data-on="Italiano" data-off="Inglese" data-true="it" data-false="en" >
+          </a>
+          
         </li>
       </ul>
     </div>
@@ -1167,8 +1183,13 @@
       </div>
     </div>
   </div>
-
+  <!-- <input id="toggle-event" type="checkbox" checked data-toggle="toggle" > -->
+  
   </div>
+
+ 
+  
+ 
 
   <script type="text/javascript">
     document.getElementById("hideAll").style.display = "block";
@@ -1189,8 +1210,12 @@
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 
+  <script src="node_modules/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
 
+  <!-- Change language -->
+  <script src="js/language.min.js"></script>
 
+  
 </body>
 
 </html>
