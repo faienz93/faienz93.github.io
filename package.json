@@ -4,7 +4,8 @@
   "version": "5.0.5",
   "scripts": {
     "start": "gulp watch",
-    "build": "gulp build"
+    "build": "gulp build",
+    "lib": "gulp vendor"
   },
   "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
   "keywords": [
