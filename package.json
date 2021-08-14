@@ -35,12 +35,12 @@
     "@fortawesome/fontawesome-free": "5.8.1",
     "bootstrap": "4.3.1",
     "bootstrap-toggle": "^2.2.2",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "jquery.easing": "^1.4.1",
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.27.5",
     "del": "4.0.0",
     "gulp": "4.0.0",
     "gulp-autoprefixer": "6.0.0",

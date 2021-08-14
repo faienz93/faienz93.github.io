@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.8.1",
-      "C:\\Users\\asus\\Documents\\Antonio\\git\\faienz93.github.io"
+      "/home/antonio/git/faienz93.github.io"
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.8.1",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.1.tgz",
   "_spec": "5.8.1",
-  "_where": "C:\\Users\\asus\\Documents\\Antonio\\git\\faienz93.github.io",
+  "_where": "/home/antonio/git/faienz93.github.io",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",
